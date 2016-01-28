@@ -11,7 +11,6 @@ public class Palindrome {
 
     private static final PrintStream ps = System.out;
     private static final Scanner in = new Scanner(System.in);
-    private static String wordToTest = "";
 
     public Palindrome(){
 
