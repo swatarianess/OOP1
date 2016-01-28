@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by swatarianess on 28/01/2016.
+ * Created by steve on 28/01/2016.
  */
 public class sumOfYear {
 
