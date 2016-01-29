@@ -19,7 +19,6 @@ public class Palindrome {
     public static void main(String[] args){
         ps.println("##### Palindrom Check #####");
         ps.println("Please enter a word: ");
-        ps.println("");
         ps.println("Input is a " + isPalindrome(in.nextLine()) + " palindrome");
     }
 
