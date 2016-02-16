@@ -1,4 +1,4 @@
-package com.week4.Q3;
+package week4.Q3;
 
 import java.util.Date;
 

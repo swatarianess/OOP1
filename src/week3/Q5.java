@@ -1,4 +1,4 @@
-package com.week3;
+package week3;
 
 import java.io.IOException;
 import java.io.PrintStream;
@@ -10,12 +10,8 @@ import java.util.Scanner;
 public class Q5 {
 
     private static final PrintStream ps = System.out;
-    private static final PrintStream err = System.err;
     private static final Scanner in = new Scanner(System.in);
 
-    public Q5(){
-
-    }
 
     public static void main(String[] args) throws IOException {
         ps.print("Select a number between 1 and 65535:");

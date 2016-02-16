@@ -1,4 +1,4 @@
-package com.week3;
+package week3;
 
 import java.io.PrintStream;
 
@@ -9,12 +9,9 @@ public class Q1 {
 
     private static PrintStream ps = System.out;
 
-    public Q1(){
-
-    }
-
     public static void main(String[] args) {
-      ps.printf(String.valueOf((int) (Math.random() * 6)));
+        int sixSidedDice = 6;
+        ps.println(String.valueOf((int) (Math.random() * sixSidedDice)));
     }
 
 

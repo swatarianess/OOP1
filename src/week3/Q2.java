@@ -1,4 +1,4 @@
-package com.week3;
+package week3;
 
 import java.io.PrintStream;
 /**
@@ -8,10 +8,6 @@ import java.io.PrintStream;
 public class Q2 {
 
     private static PrintStream ps = System.out;
-
-    public Q2(){
-
-    }
 
     public static void main(String[] args) {
         int timeToThrow = Integer.parseInt(args[0]);
@@ -30,7 +26,7 @@ public class Q2 {
 
 
     /**
-     * @param die int The type of die to be thrown.
+     * @param die The type of die to be thrown.
      */
     public static void roll(int die){
         if(validDice(die)) {
@@ -39,8 +35,8 @@ public class Q2 {
     }
 
     /**
-     * @param times int The amount of rolls of said die type.
-     * @param die int The type of die to be thrown.
+     * @param times The amount of rolls of said die type.
+     * @param die The type of die to be thrown.
      */
     public static void roll(int times, int die){
         if(times <= 10) {
@@ -57,7 +53,7 @@ public class Q2 {
     }
 
     /**
-     * @param die int The type of die being used.
+     * @param die The type of die being used.
      * @return Returns whether the dice is one of the accepted sidede ones.
      */
     public static boolean validDice(int die){

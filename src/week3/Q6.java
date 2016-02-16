@@ -1,4 +1,4 @@
-package com.week3;
+package week3;
 
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -12,10 +12,6 @@ public class Q6 {
     private static final Scanner in = new Scanner(System.in);
     private static final StringBuilder reverse = new StringBuilder();
 
-
-    public Q6(){
-
-    }
 
     public static void main(String[] args){
         ps.print("Please enter words:");

@@ -1,4 +1,4 @@
-package com.week4.Q1;
+package week4.Q1;
 
 import java.io.PrintStream;
 import java.text.DateFormat;
@@ -18,10 +18,6 @@ public class sumOfYear {
 
 
     private static PrintStream ps = System.out;
-
-    public sumOfYear(){
-
-    }
 
     public static int sumOfAges(Person... m){
         //Calculate the ages of people?
