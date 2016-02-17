@@ -2,9 +2,7 @@ package week3;
 
 import java.io.PrintStream;
 
-/**
- * Created by swatarianess on 28/01/2016.
- */
+
 public class Q4 {
 
     private static PrintStream ps = System.out;

@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-/**
- * Created by swatarianess on 28/01/2016.
- */
+
 public class Q5 {
 
     private static final PrintStream ps = System.out;
