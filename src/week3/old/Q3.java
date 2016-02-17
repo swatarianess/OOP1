@@ -1,4 +1,4 @@
-package week3;
+package week3.old;
 
 import java.io.PrintStream;
 /**
@@ -87,6 +87,6 @@ public class Q3 {
      * @param rolls Checks the amount of rolls
      * @return Returns <t>True</t> if the rolls are a positive number, <t>False</t> if the rolls are an odd number.
      */
-    private static boolean positiveRolls(int rolls){return rolls > 0 && rolls%2==0;}
+    private static boolean positiveRolls(int rolls){return rolls > 0;}
 
 }

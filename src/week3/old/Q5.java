@@ -1,4 +1,4 @@
-package week3;
+package week3.old;
 
 import java.io.IOException;
 import java.io.PrintStream;
