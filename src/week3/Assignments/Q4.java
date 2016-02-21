@@ -1,8 +1,10 @@
-package week3.old;
+package week3.Assignments;
 
 import java.io.PrintStream;
 
-
+/**
+ * Created by Stephen Adu on 17/02/2016.
+ */
 public class Q4 {
 
     private static PrintStream ps = System.out;

@@ -1,10 +1,12 @@
-package week3.old;
+package week3.Assignments;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-
+/**
+ * Created by Stephen Adu on 17/02/2016.
+ */
 public class Q5 {
 
     private static final PrintStream ps = System.out;

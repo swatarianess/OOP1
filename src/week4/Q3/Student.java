@@ -12,12 +12,11 @@ public class Student {
     private String lastName;
     private Date dateOfBirth;
 
-
-    public Student(int number, String firstName, String lastName, Date dateofBirth){
+    public Student(int number, String firstName, String lastName, Date dateOfBirth){
         this.number = number;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.dateOfBirth = dateofBirth;
+        this.dateOfBirth = dateOfBirth;
     }
 
     public int getNumber() {

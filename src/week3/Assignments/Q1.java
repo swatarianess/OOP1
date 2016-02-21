@@ -1,9 +1,13 @@
-package week3.old;
+package week3.Assignments;
 
 import java.io.PrintStream;
 
 /*
  * Write an application rolling a six-sided dice and showing the results on the console.
+ */
+
+/**
+ * Created by Stephen Adu on 17/02/2016.
  */
 public class Q1 {
 

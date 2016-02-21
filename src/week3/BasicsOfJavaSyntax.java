@@ -1,4 +1,4 @@
-package week3.Combination;
+package week3;
 
 /**
  * Created by Reall_blue on 17/02/2016.

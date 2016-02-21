@@ -1,10 +1,10 @@
-package week3.old;
+package week3.Assignments;
 
 import java.io.PrintStream;
 import java.util.Scanner;
 
 /**
- * Created by swatarianess on 28/01/2016.
+ * Created by Stephen Adu on 17/02/2016.
  */
 public class Q6 {
 
