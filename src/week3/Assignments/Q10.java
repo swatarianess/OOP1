@@ -8,29 +8,26 @@ import java.util.Scanner;
  */
 public class Q10 {
 
-    private static PrintStream ps = System.out;
-    private static Scanner input = new Scanner(System.in);
+    private static final PrintStream ps = System.out;
+    private static final Scanner input = new Scanner(System.in);
 
 
-    public static  void main(String[] args){
+    public static void main(String[] args){
+        Q10 q = new Q10();
 
-        ps.println("Select the type of operation on the matrix.\n1: Transposition\n2: addition\n3: Scalar multiplication\n4: Product of two matrices\n >");
+        ps.println("Select the type of operation on the matrix.\n1: Transposition\n2: addition\n3: Product of two matrices\n >");
         int option = Integer.valueOf(input.nextLine());
         switch(option){
             case 1:
-                option1();
+                q.option1();
                 break;
 
             case 2:
-                option2();
+                q.option2();
                 break;
 
             case 3:
-                option3();
-                break;
-
-            case 4:
-                option4();
+                q.option3();
                 break;
 
             default:
@@ -40,7 +37,12 @@ public class Q10 {
 
     }
 
-    private static int[][] transposeMatrix(int [][] m){
+    /**
+     * Transposition of a Matrix
+     * @param m The matrix to transpose
+     * @return Returns the transposed matrix
+     */
+    private int[][] transposeMatrix(int [][] m){
         int a = m.length;
         int b = m[0].length;
 
@@ -53,7 +55,11 @@ public class Q10 {
         return temp;
     }
 
-    private static void printMatrix(int[][] matrix){
+    /**
+     * Prints a matrix in the correct format
+     * @param matrix The matrix to print
+     */
+    private void printMatrix(int[][] matrix){
         for (int[] aMatrix : matrix) {
             for (int j = 0; j < matrix[0].length; j++) {
                 ps.print(aMatrix[j] + " ");
@@ -62,7 +68,10 @@ public class Q10 {
         }
     }
 
-    private static void option1(){
+    /**
+     *  Transposition of a matrix option.
+     */
+    private void option1(){
         ps.print("Enter number of rows and columns in the matrix:\n" + " > ");
         String[] rowsAndColumns = input.nextLine().split(" ");
 
@@ -82,7 +91,10 @@ public class Q10 {
         printMatrix(transposeMatrix(matrix));
     }
 
-    private static void option2(){
+    /**
+     * Addition of two matrices
+     */
+    private void option2(){
         ps.print("Enter number of rows in the FIRST matrix:\n" + " > ");
         int rowsMatrixOne = input.nextInt();
 
@@ -116,11 +128,10 @@ public class Q10 {
         printMatrix(addMatrix(matrixOne,matrixTwo));
     }
 
-    private static void option3(){
-        //printMatrix(multiplyScalar());
-    }
-
-    private static void option4(){
+    /**
+     * Product of two matrices
+     */
+    private void option3(){
         ps.print("Enter number of rows in the FIRST matrix:\n" + " > ");
         int rowsMatrixOne = input.nextInt();
 
@@ -154,7 +165,12 @@ public class Q10 {
         printMatrix(multiplyMatrix(matrixOne,matrixTwo));
     }
 
-    private static int[][] multiplyMatrix(int[][] A, int[][]B){
+    /**
+     * @param A The first matrix to multiply
+     * @param B The second matrix to multiply
+     * @return Returns the product of two matrices
+     */
+    private int[][] multiplyMatrix(int[][] A, int[][]B){
         int mA = A.length;
         int nA = A[0].length;
         int mB = B.length;
@@ -174,7 +190,12 @@ public class Q10 {
 
     }
 
-    private static int[][] multiplyScalar(int A, int[][] matrix){
+    /**
+     * @param A A scalar value
+     * @param matrix A matrix to multiply by a scalar value
+     * @return Returns the scalar multiplied matrix
+     */
+    private int[][] multiplyScalar(int A, int[][] matrix){
         int m = matrix.length;
         int n = matrix[0].length;
 
@@ -187,8 +208,12 @@ public class Q10 {
     }
 
 
-
-    private static int[][] addMatrix(int[][]A, int[][]B){
+    /**
+     * @param A The first matrix to add.
+     * @param B The second matrix to add
+     * @return Returns the result of two added matrices.
+     */
+    private int[][] addMatrix(int[][]A, int[][]B){
         int m = A.length;
         int n = A[0].length;
         int[][]C = new int[m][n];

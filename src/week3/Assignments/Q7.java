@@ -9,37 +9,39 @@ import java.util.Scanner;
  */
 public class Q7 {
 
-    private static PrintStream ps = System.out;
+    private static final PrintStream ps = System.out;
 
-   public static void main(String[] args){
-       Scanner input = new Scanner(System.in);
-       ps.println("Please enter: Width and Height");
-       String[] widthAndHeight = (input.nextLine().split(" "));
-       input.close();
-        ps.print(generateGrid(Integer.valueOf(widthAndHeight[0]),Integer.valueOf(widthAndHeight[1])));
-   }
+    public static void main(String[] args){
+        Q7 q = new Q7();
 
-   public static StringBuilder generateGrid(int width, int height){
-       String breakPoint = "-------------";
-       StringBuilder a = new StringBuilder();
+        Scanner input = new Scanner(System.in);
+        ps.print("Please enter Width and Height:\n>");
+        String[] widthAndHeight = (input.nextLine().split(" "));
+        input.close();
+        ps.print(q.generateGrid(Integer.valueOf(widthAndHeight[0]),Integer.valueOf(widthAndHeight[1])));
+    }
 
-       for(int i = 0; i < height;i++){
-           a.append(breakPoint).append("\n");
-           for(int j =0; j < width; j++) {
-               a.append(generateRandomX("|X|", "| |"));
-           }
-           a.append("\n");
-       }
+    private StringBuilder generateGrid(int width, int height){
+        String breakPoint = "-------------";
+        StringBuilder a = new StringBuilder();
 
-       return a;
-   }
+        for(int i = 0; i < height;i++){
+            a.append(breakPoint).append("\n");
+            for(int j =0; j < width; j++) {
+                a.append(generateRandomX());
+            }
+            a.append("\n");
+        }
 
-    private static String generateRandomX(String option1, String option2){
+        return a;
+    }
+
+    private String generateRandomX(){
         Random r = new Random();
         if(r.nextBoolean()){
-            return option1;
+            return "|X|";
         } else {
-            return option2;
+            return "| |";
         }
     }
 

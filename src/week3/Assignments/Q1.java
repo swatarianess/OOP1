@@ -11,7 +11,7 @@ import java.io.PrintStream;
  */
 public class Q1 {
 
-    private static PrintStream ps = System.out;
+    private static final PrintStream ps = System.out;
 
     public static void main(String[] args) {
         int sixSidedDice = 6;

@@ -14,7 +14,7 @@ public class Q5 {
 
 
     public static void main(String[] args) throws IOException {
-        ps.print("Select a number between 1 and 65535:");
+        ps.print("Select a number between 1 and 65535:\n>");
         int unicodeID = in.nextInt();
         String s = Character.toString((char)unicodeID);
         ps.println(s);

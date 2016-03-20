@@ -1,7 +1,6 @@
 package week3.Assignments;
 
 import java.io.PrintStream;
-
 import java.util.Scanner;
 
 /**
@@ -9,8 +8,8 @@ import java.util.Scanner;
  */
 public class Q8 {
 
-    private static Scanner input = new Scanner(System.in);
-    private static PrintStream ps = System.out;
+    private static final Scanner input = new Scanner(System.in);
+    private static final PrintStream ps = System.out;
 
     public static void main(String[] main){
         System.out.println("How many rows do you want to have? ");

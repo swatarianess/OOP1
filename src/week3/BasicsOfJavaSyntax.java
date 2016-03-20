@@ -1,7 +1,7 @@
 package week3;
 
 /**
- * Created by Reall_blue on 17/02/2016.
+ * Created by Stephen Adu on 17/02/2016.
  * Project: OOP_ClassProjects
  */
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class BasicsOfJavaSyntax {
 
-    private static Scanner sr = new Scanner(System.in);
+    private static final Scanner sr = new Scanner(System.in);
 
     public static void main(String[] args){
         BasicsOfJavaSyntax boj = new BasicsOfJavaSyntax();

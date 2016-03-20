@@ -8,10 +8,10 @@ import java.util.Scanner;
  */
 public class Q9 {
 
-    private static PrintStream ps = System.out;
+    private static final PrintStream ps = System.out;
 
 
-    public static  void main(String[] args){
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
         ps.print("Enter number of rows and columns in the matrix:\n" + " > ");

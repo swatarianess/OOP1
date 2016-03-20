@@ -1,4 +1,4 @@
-package week4.Q3;
+package week4.Q2;
 
 import java.util.Date;
 
@@ -7,10 +7,10 @@ import java.util.Date;
  */
 public class Student {
 
-    private int number;
-    private String firstName;
-    private String lastName;
-    private Date dateOfBirth;
+    private final int number;
+    private final String firstName;
+    private final String lastName;
+    private final Date dateOfBirth;
 
     public Student(int number, String firstName, String lastName, Date dateOfBirth){
         this.number = number;
@@ -23,15 +23,12 @@ public class Student {
         return number;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return firstName + " " + lastName;
     }
 
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
+
 }

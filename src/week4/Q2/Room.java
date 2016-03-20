@@ -1,13 +1,13 @@
-package week4.Q3;
+package week4.Q2;
 
 /**
  * Created by Steve on 28/01/2016.
  */
 public class Room {
 
-    private String roomNumber;
-    private int tables;
-    private boolean computerRoom;
+    private final String roomNumber;
+    private final int tables;
+    private final boolean computerRoom;
     private boolean available;
 
     public Room(String roomNumber, int tables, boolean computerRoom, boolean available){

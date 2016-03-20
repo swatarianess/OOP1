@@ -7,7 +7,7 @@ import java.io.PrintStream;
  */
 public class Q4 {
 
-    private static PrintStream ps = System.out;
+    private static final PrintStream ps = System.out;
 
     public static void main(String[] args) {
         int length = Integer.parseInt(args[0]);
