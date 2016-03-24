@@ -1,11 +1,11 @@
-package week4.Q1;
+package week4Old.Q1;
 
 /**
  * Created by swatarianess on 28/01/2016.
  */
 public class Person {
 
-    private int year;
+    private final int year;
 
     public Person(int year){
         this.year = year;
