@@ -78,9 +78,9 @@ public class Route {
 
     @Override
     public String toString() {
-        String geneString = " | ";
+        String geneString = "";
         for (int i = 0; i < tourSize(); i++) {
-            geneString += getCity(i).getName()+" | ";
+            geneString += getCity(i).getDetails() + "\n";
         }
         return geneString;
     }

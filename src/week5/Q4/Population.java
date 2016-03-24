@@ -9,7 +9,6 @@ public class Population {
 
     public Population(int populationSize, boolean initialise) {
         routes = new Route[populationSize];
-        // If we need to initialise a population of routes do so
         if (initialise) {
             // Loop and create individuals
             for (int i = 0; i < populationSize(); i++) {
