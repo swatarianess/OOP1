@@ -33,8 +33,7 @@ public class TravellingSalesman {
         RouteHandler.addCity(c9);
 
         ps.println("Cities in route: " + RouteHandler.numberOfCities());
-
-        Population pop = new Population(50,true);
+        Population pop = new Population(3,true);
         ps.println("Initial distance: " + pop.getFittest().getDistance());
         ps.println("Route: ");
         ps.println(pop.getFittest().toString());

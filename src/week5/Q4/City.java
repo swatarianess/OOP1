@@ -42,8 +42,11 @@ public class City {
         return name;
     }
 
-    public String getDetails(){ return "| " + name + " | Cost: " + cost + " | Pop: " +
-            Integer.toString(population) + " | pos: (" + x + "," + y + ") |"  ; }
+    public String getDetails(){ return "| " + name +
+            " | Cost: " + cost +
+            " | Pop: " + Integer.toString(population) +
+            " | Income: " + Integer.toString(income * population) +
+            " | pos: (" + x + "," + y + ") |"  ; }
 
     public int getIncome(){
         return income;
