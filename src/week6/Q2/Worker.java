@@ -8,16 +8,20 @@ public class Worker {
     private String name;
     private int salary;
 
+    public Worker(String name, int salary){
+        this.name = name;
+        this.salary = salary;
+    }
 
     /**
      * @param hours The number of hours worked
-     * @param salary The amount of salary per hour
      * @return The total weekly earnings
      */
-    public int computePay(int hours, int salary){
+    public double computePay(int hours){
         double overTime = 1.5;
         int sc = hours * salary;
-        int scOver = (int) ((hours - 40) * salary * overTime);
+        double scOver = ((hours - 40) * salary * overTime) + sc;
+
 
         if(hours < 40) {
             return sc;
@@ -28,5 +32,12 @@ public class Worker {
     }
 
 
+    public String getName() {
+        return name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
 
 }
