@@ -8,30 +8,26 @@ import java.util.Collections;
  */
 public class Route {
 
-    // Holds our tour of cities
     private ArrayList<City> Route = new ArrayList<>();
 
-    // Cache
     private double fitness = 0;
     private int distance = 0;
 
-    // Constructs a blank tour
     public Route(){
         for (int i = 0; i < RouteHandler.numberOfCities(); i++) {
             Route.add(null);
         }
     }
 
-    public Route(ArrayList<City> tour){
-        this.Route = tour;
-    }
-
-    // Creates a random individual
     public void generateIndividual() {
         for (int cityIndex = 0; cityIndex < RouteHandler.numberOfCities(); cityIndex++) {
             setCity(cityIndex, RouteHandler.getCity(cityIndex));
         }
         Collections.shuffle(Route);
+    }
+
+    public Route(ArrayList<City> tour){
+        this.Route = tour;
     }
 
     public City getCity(int tourPosition) {
@@ -51,7 +47,6 @@ public class Route {
         return fitness;
     }
 
-    // Gets the total distance of the tour
     public int getDistance(){
         if (distance == 0) {
             int tourDistance = 0;
@@ -81,9 +76,9 @@ public class Route {
 
     @Override
     public String toString() {
-        String geneString = "|";
+        String geneString = "";
         for (int i = 0; i < tourSize(); i++) {
-            geneString += getCity(i)+"|";
+            geneString += getCity(i).getDetails() + "\n";
         }
         return geneString;
     }

@@ -7,7 +7,7 @@ import java.text.NumberFormat;
  */
 public class City {
     private final String name;
-    private final int cost;
+    private final double cost;
     private final int population;
     private final int x;
     private final int y;
@@ -15,7 +15,7 @@ public class City {
 
     public City(String name, int cost, int population, int income){
         this.name = name;
-        this.cost = cost;
+        this.cost = 0.28;
         this.population = population;
         this.income = income;
         this.x = (int) (Math.random()*1000);
@@ -24,7 +24,7 @@ public class City {
 
     public City(String name, int cost, int population,int income, int x, int y){
         this.name = name;
-        this.cost = cost;
+        this.cost = 0.28;
         this.population = population;
         this.income = income;
         this.x = x;
@@ -33,7 +33,7 @@ public class City {
 
     public City(String name){
         this.name = name;
-        this.cost = (int) (Math.random()*10);
+        this.cost = 0.28;
         this.population = (int) (Math.random()*10000);
         this.income = (int)(Math.random()*1000);
         this.x = (int) (Math.random()*10);
