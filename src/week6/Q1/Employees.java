@@ -29,6 +29,7 @@ public class Employees {
 
     @Override
     public String toString(){
-        return "| " + name + "| " + dep + "| " + salary + "|";
+
+        return String.format("| %-12s | %-12s | %-10s |", name, dep, salary);
     }
 }

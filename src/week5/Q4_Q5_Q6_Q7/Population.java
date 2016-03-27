@@ -1,4 +1,4 @@
-package week5.Q4;
+package week5.Q4_Q5_Q6_Q7;
 
 /**
  * Created by Stephen Adu on 08/03/2016.

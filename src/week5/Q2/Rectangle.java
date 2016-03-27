@@ -25,30 +25,51 @@ public class Rectangle {
         counter++;
     }
 
+    /**
+     * @return Returns the amount of <p> Rectangles </p>
+     */
     public static int getCounter() {
         return counter;
     }
 
+    /**
+     * @return Returns the width of the <p> Rectangle </p>
+     */
     public int getWidth() {
         return width;
     }
 
+    /**
+     * @param width The width to set the <p> Rectangle </p>
+     */
     public void setWidth(int width) {
         this.width = width;
     }
 
+    /**
+     * @return Returns the height of the <p> Rectangle </p>
+     */
     public int getHeight() {
         return height;
     }
 
+    /**
+     * @param height The height to set the <p> Rectangle </p>
+     */
     public void setHeight(int height) {
         this.height = height;
     }
 
+    /**
+     * @return Returns the color of the <p> Rectangle </p>
+     */
     public Color getColor() {
         return color;
     }
 
+    /**
+     * @param color The color to set the <p> Rectangle </p>
+     */
     public void setColor(Color color) {
         this.color = color;
     }

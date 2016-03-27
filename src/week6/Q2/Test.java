@@ -13,6 +13,9 @@ public class Test {
 
         Salaried_Worker sw = new Salaried_Worker("S_Worker 1",500,45);
 
+        String m = String.format("| %10s | %8s | %10s |", "Name", "Salary", "Income");
+
+        System.out.println(m);
         System.out.println(hw);
         System.out.println(hw1);
         System.out.println(hw2);

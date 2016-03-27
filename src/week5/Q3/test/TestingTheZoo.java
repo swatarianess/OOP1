@@ -8,12 +8,7 @@ public class TestingTheZoo {
 
 	public static void main(String[] args) {
 		Zoo myZoo = new Zoo();
-/**		Cat minou = new Cat("Minou");
-		Cat blackie = new Cat("Blackie");
-		Donkey pinto = new Donkey("Pinto");		
-		myZoo.addAnimal(minou);
-		myZoo.addAnimal(blackie);
-		myZoo.addAnimal(pinto);*/
+
 		Cat ginger = new Cat("Ginger");
 		myZoo.addAnimal(ginger);
 		Elephant dumbo = new Elephant("Dumbo");
@@ -34,14 +29,7 @@ public class TestingTheZoo {
 		System.out.println(myZoo.toString());
 		System.out.println();
 		System.out.println(animals.toString()); 
-		
-/**		System.out.println(myZoo.toString());
-		
-		for(Animal animal : animals) {
-			if(!(animal instanceof Cat)) {
-				System.out.println(animal.sound());
-			}
-		}*/
+
 
 	}
 

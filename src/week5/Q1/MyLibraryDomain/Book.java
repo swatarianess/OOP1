@@ -12,10 +12,16 @@ public class Book {
         this.author = author;
     }
 
+    /**
+     * @return Returns the title of the book
+     */
     public String getTitle(){
         return title;
     }
 
+    /**
+     * @return Returns the author of the book
+     */
     public String getAuthor(){
         return author;
     }

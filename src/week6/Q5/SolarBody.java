@@ -30,7 +30,7 @@ public enum SolarBody {
         System.out.printf("|| %-12s || %-12s || %-12s ||\n","Planet","Mass","Radius");
         System.out.println("||==============||==============||==============||");
         for(SolarBody planet : SolarBody.values()){
-            System.out.printf("|| %-12s || %-12.3e || %12.4e || \n", planet, planet.getMass(),planet.getRadius());
+            System.out.printf("|| %-12s || %-12.3e || %-12.4e || \n", planet, planet.getMass(),planet.getRadius());
         }
         System.out.println("||==============||==============||==============||");
     }

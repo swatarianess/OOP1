@@ -14,7 +14,8 @@ public class Salaried_Worker extends Worker {
 
     @Override
     public String toString(){
-        return "| " + getName() + " | " + getSalary() + " | " + computePay(hours) + " | ";
+        return String.format("| %10s | %8s | %10.2f |", getName(), getSalary(), computePay(hours));
+
     }
 
     @Override

@@ -9,9 +9,7 @@ public class Population {
 
     public Population(int populationSize, boolean initialise) {
         routes = new Route[populationSize];
-        // If we need to initialise a population of routes do so
         if (initialise) {
-            // Loop and create individuals
             for (int i = 0; i < populationSize(); i++) {
                 Route newRoute = new Route();
                 newRoute.generateIndividual();
@@ -20,17 +18,25 @@ public class Population {
         }
     }
 
-    // Saves a tour
+    /**
+     * @param index The index of the route to save
+     * @param route The route to save
+     */
     public void saveRoute(int index, Route route) {
         routes[index] = route;
     }
 
-    // Gets a tour from population
+    /**
+     * @param index The index of a route in the routes array
+     * @return Returns the route in the specified index
+     */
     public Route getRoute(int index) {
         return routes[index];
     }
 
-    // Gets the best tour in the population
+    /**
+     * @return Returns the best route
+     */
     public Route getFittest() {
         Route fittest = routes[0];
         // Loop through individuals to find fittest
@@ -42,6 +48,9 @@ public class Population {
         return fittest;
     }
 
+    /**
+     * @return Returns the size of the route
+     */
     public int populationSize() {
         return routes.length;
     }

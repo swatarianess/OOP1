@@ -1,4 +1,6 @@
-package week5.Q4;
+package week5.Q4_Q5_Q6_Q7;
+
+import java.text.NumberFormat;
 
 /**
  * Created by Stephen Adu on 08/03/2016.
@@ -42,22 +44,9 @@ public class City {
         return name;
     }
 
-    public String getDetails(){ return "| " + name +
-            " | Cost: " + cost +
-            " | Pop: " + Integer.toString(population) +
-            " | Income: " + Integer.toString(income * population) +
-            " | pos: (" + x + "," + y + ") |"  ; }
-
-    public int getIncome(){
-        return income;
-    }
-
-    public int getCost(){
-        return cost;
-    }
-
-    public int getPopulation(){
-        return population;
+    public String getDetails(){
+        return String.format("| %-12s | %5s | %10s | %10s | (%d,%d)%5s ",
+                name, cost, NumberFormat.getNumberInstance().format(population), NumberFormat.getNumberInstance().format((income)), x, y," |");
     }
 
     public double distanceTo(City city){
